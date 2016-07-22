@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alerts 警告框</title>
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <script type="application/javascript" src="../../js/jquery-2.2.4.min.js"></script>
+  <script language="JavaScript" src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+  <div class="alert alert-success" role="alert">Well done! You successfully read this important alert message.</div>
+  <div class="alert alert-info" role="alert">Heads up! This alert needs your attention, but it's not super important.</div>
+  <div class="alert alert-warning" role="alert">Warning! Better check yourself, you're not looking too good.</div>
+  <div class="alert alert-danger" role="alert">Oh snap! Change a few things up and try submitting again.</div>
+
+  <hr style="height:5px;border:none;border-top:5px dashed purple;"/>
+
+  <!--可关闭的警告框-->
+  <!--为警告框添加一个可选的 .alert-dismissible 类和一个关闭按钮。-->
+  <div class="alert alert-warning alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  </div>
+
+  <hr style="height:5px;border:none;border-top:5px dashed purple;"/>
+
+  <!--警告框中的链接-->
+  <!--用 .alert-link 工具类，可以为链接设置与当前警告框相符的颜色。-->
+  <div class="alert alert-success" role="alert">
+    Well done! You successfully read<a href="#" class="alert-link"> this important alert message</a>.
+  </div>
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

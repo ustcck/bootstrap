@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>弹出框 popover</title>
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <script type="application/javascript" src="../../js/jquery-2.2.4.min.js"></script>
+  <script language="JavaScript" src="../../js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+
+    })
+  </script>
+</head>
+<body>
+<div class="container">
+  <div>
+    <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title"
+            data-content="And here's some amazing content. It's very engaging. Right?">
+      点我弹出/隐藏弹出框
+    </button>
+
+    <hr style="height:5px;border:none;border-top:5px dashed purple;"/>
+
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left"
+            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Popover on 左侧
+    </button>
+
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top"
+            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Popover on 顶部
+    </button>
+
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom"
+            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Popover on 底部
+    </button>
+
+    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right"
+            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Popover on 右侧
+    </button>
+  </div>
+
+  <hr style="height:5px;border:none;border-top:5px dashed purple;"/>
+
+  <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">
+    可消失的弹出框
+  </a>
+</div>
+</body>
+</html>

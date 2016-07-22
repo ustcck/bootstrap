@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>grid</title>
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <style type="text/css">
+    div {
+      border: 1px #333333 solid;
+    }
+
+    @media (max-width: 767px) {  /*在小于767px的屏幕里，这里的样式才生效*/
+      div {background: #f0ad4e;}
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {  /*在大于768px小于991px的屏幕里，这里的样式才生效*/
+      div {background: #2aabd2;}
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+    <div class="col-md-1">col-md-1</div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-sm-6">col-md-8</div>
+    <div class="col-md-4 col-sm-6">col-md-4</div>
+  </div>
+</div>
+</body>
+</html>

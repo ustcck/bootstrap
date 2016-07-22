@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dropdown 下拉菜单</title>
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <script type="application/javascript" src="../../js/jquery-2.2.4.min.js"></script>
+  <script language="JavaScript" src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      Dropdown
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-left"  aria-labelledby="dropdownMenu1">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li class="dropdown-header">Dropdown header</li> <!--标题:在任何下拉菜单中均可通过添加标题来标明一组动作。-->
+      <li><a href="#">Something else here</a></li>
+      <li role="separator" class="divider"></li> <!--分割线:为下拉菜单添加一条分割线，用于将多个链接分组。-->
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+  <hr style="height:5px;border:none;border-top:5px dashed purple;"/>
+
+  <div class="dropup">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropup
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+      <li><a href="#">Action</a></li>
+      <li><a href="#">Another action</a></li>
+      <li><a href="#">Something else here</a></li>
+      <li class="disabled"><a href="#">Disabled link</a></li> <!--禁用的菜单项-->
+      <li><a href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+  <hr style="height:5px;border:none;border-top:5px dashed purple;"/>
+
+
+
+</div>
+</body>
+</html>
